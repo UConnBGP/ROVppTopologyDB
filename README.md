@@ -22,6 +22,31 @@ Using the following command, you will be able to access the database running on 
 docker run -p 5566:5432 --name forecastedb ireynaldo/forecastdb
 ```
 
+##### If you want persistant container storage
+
+If you want to keep data after it's stopped you need to use volumes.
+
+```
+docker run -p 5566:5432 -v <some_local_directory>:/var/lib/postgresql/data/pgdata --name forecastedb ireynaldo/forecastdb
+```
+
+##### Delete volume
+
+List volumes
+```
+docker volume ls
+```
+
+Delete specific volume
+```
+docker volume rm <volume_name>
+```
+
+Removes any volume not being used
+```
+docker volume prune
+```
+
 #### How to stop container
 
 ```
