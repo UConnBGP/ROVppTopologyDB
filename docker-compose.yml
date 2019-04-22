@@ -1,0 +1,14 @@
+version: '3'
+services:
+  db:
+    build : .
+    ports:
+      - "5566:5432"
+    volumes:
+      - dbdata:/var/lib/postgresql/data/pgdata
+
+volumes:
+  dbdata:
+    driver: local-persist
+    driver_opts:
+      mountpoint: /home/reynaldo/Dropbox/School/Research/BGP/database/pgdata
