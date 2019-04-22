@@ -3,7 +3,7 @@
 This is used to make small tests of the extrapolator at this point.
 The default topology when building the image is the following:
 
-![default_topology](./readme_media/test_net.jpg)
+![default_topology](./readme_media/strongly_connected_component.jpg)
 
 ## How to run using docker
 

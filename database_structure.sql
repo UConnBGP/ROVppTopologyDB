@@ -37,11 +37,12 @@ CREATE TABLE extrapolation_results (
 
 INSERT INTO public.customer_providers VALUES (1, 2, 6);
 INSERT INTO public.customer_providers VALUES (2, 2, 7);
-INSERT INTO public.customer_providers VALUES (3, 5, 6);
+INSERT INTO public.customer_providers VALUES (3, 6, 5);
 INSERT INTO public.customer_providers VALUES (4, 6, 8);
 INSERT INTO public.customer_providers VALUES (5, 6, 9);
 INSERT INTO public.customer_providers VALUES (6, 7, 9);
 INSERT INTO public.customer_providers VALUES (7, 7, 10);
+INSERT INTO public.customer_providers VALUES (8, 5, 2);
 
 
 --
@@ -66,7 +67,6 @@ INSERT INTO public.peers VALUES (2, 1, 3);
 INSERT INTO public.peers VALUES (3, 1, 4);
 INSERT INTO public.peers VALUES (4, 2, 3);
 INSERT INTO public.peers VALUES (5, 2, 4);
-INSERT INTO public.peers VALUES (6, 2, 5);
 INSERT INTO public.peers VALUES (7, 3, 4);
 INSERT INTO public.peers VALUES (8, 6, 7);
 INSERT INTO public.peers VALUES (9, 8, 9);
