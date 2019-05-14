@@ -1,2 +1,4 @@
 pgdata
 readme_media/*
+.gitignore
+.git

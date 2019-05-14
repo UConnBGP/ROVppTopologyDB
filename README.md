@@ -22,6 +22,20 @@ Using the following command, you will be able to access the database running on 
 docker run -p 5566:5432 --name forecastedb ireynaldo/forecastdb
 ```
 
+## Load/Change (small test topology)
+
+```
+docker exec -it database_db_1 change_topology small_test
+```
+
+## Load/Change caida
+
+> **Note**: You need to download the CAIDA topology first which can be done by running `create_relationship_csv.sh` inside `topologies/caida`.
+
+```
+docker exec -it database_db_1 change_topology caida
+```
+
 ##### If you want persistant container storage
 
 If you want to keep data after it's stopped you need to use volumes.

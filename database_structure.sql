@@ -1,7 +1,7 @@
 CREATE TABLE mrt_announcements (
   origin BIGINT,
   as_path BIGINT[],
-  prefix CIDR,
+  prefix CIDR
 );
 CREATE TABLE roas (
   asn BIGINT,
