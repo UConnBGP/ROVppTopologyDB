@@ -26,3 +26,6 @@ CREATE TABLE extrapolation_results (
   origin BIGINT,
   received_from_asn BIGINT
 );
+CREATE TABLE rov_ases (
+  asn BIGINT
+);

@@ -2,7 +2,7 @@
 
 # Download the relationship dataset from CAIDA
 echo "Downloading Relationship Data"
-wget --mirror --no-parent http://data.caida.org/datasets/as-relationships/serial-2/
+wget --mirror --no-parent http://data.caida.org/datasets/as-relationships/serial-2/20151201.as-rel2.txt.bz2
 echo "\e[92mDownload Complete\e[0m"
 # Go into the dataset dir
 cd data.caida.org/datasets/as-relationships/serial-2
@@ -54,7 +54,7 @@ rm customer_provider.csv peers.csv dups_removed.csv
 rm -rf data.caida.org
 
 # Rename the final output files
-mv just_customer_provider.csv customer_provider.csv
+mv just_customer_provider.csv customer_providers.csv
 mv just_peers.csv peers.csv
 echo "\e[92mDone!!!\e[0m"
 
