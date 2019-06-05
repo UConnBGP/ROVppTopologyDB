@@ -13,4 +13,5 @@ fi
 topology=${1};
 echo "Loading Topology ...";
 psql -d bgp -U bgp_user -f /db/topologies/$topology/load.sql
+psql -d bgp -U bgp_user -f /db/topologies/create_ases_table.sql
 echo "\e[92mLoaded!\e[0m";
